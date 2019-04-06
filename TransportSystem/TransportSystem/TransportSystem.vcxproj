@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -139,14 +140,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="form2.cpp" />
+    <ClCompile Include="login.cpp" />
     <ClCompile Include="MainMenu1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="form2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MainMenu1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="form2.resx">
+      <DependentUpon>form2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu1.resx">
       <DependentUpon>MainMenu1.h</DependentUpon>
     </EmbeddedResource>

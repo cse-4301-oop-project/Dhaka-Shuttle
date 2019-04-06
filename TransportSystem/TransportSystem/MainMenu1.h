@@ -1,4 +1,6 @@
 #pragma once
+#include "form2.h"
+#include "login.h"
 
 namespace TransportSystem {
 
@@ -87,6 +89,7 @@ namespace TransportSystem {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"STAFF";
 			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &MainMenu1::button2_Click);
 			// 
 			// button3
 			// 
@@ -146,5 +149,10 @@ namespace TransportSystem {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Hide();
+		login ^f3 = gcnew login(this);
+		f3->ShowDialog();  
+	}
+};
 }
