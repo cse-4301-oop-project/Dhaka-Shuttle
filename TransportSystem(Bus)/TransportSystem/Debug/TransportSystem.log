@@ -1,0 +1,8 @@
+﻿  Admin.cpp
+  BUS.cpp
+  Busupdate.cpp
+  MainMenu1.cpp
+c:\users\novera\desktop\oop project\transportsystem(bus)\transportsystem\mainmenu1.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generating Code...
+  Admin.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  TransportSystem.vcxproj -> C:\Users\Novera\Desktop\OOP project\TransportSystem(Bus)\Debug\TransportSystem.exe
