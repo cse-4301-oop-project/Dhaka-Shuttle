@@ -75,6 +75,7 @@ namespace TransportSystem {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"STUDENT";
 			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &MainMenu1::button1_Click);
 			// 
 			// button2
 			// 
@@ -120,13 +121,13 @@ namespace TransportSystem {
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->label1->Location = System::Drawing::Point(476, 610);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(438, 29);
+			this->label1->Size = System::Drawing::Size(544, 35);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"STUDENT TRANSPORT SYSTEM";
 			// 
 			// MainMenu1
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(16, 29);
+			this->AutoScaleDimensions = System::Drawing::SizeF(20, 35);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
@@ -146,5 +147,9 @@ namespace TransportSystem {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		MessageBox::Show("ok");
+	}
+};
 }
