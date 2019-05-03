@@ -146,6 +146,8 @@
     <ClCompile Include="login.cpp" />
     <ClCompile Include="MainMenu1.cpp" />
     <ClCompile Include="BUScpp" />
+    <ClCompile Include="signup.cpp" />
+    <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
@@ -164,6 +166,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="BUS.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="signup.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="student.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -185,6 +193,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu1.resx">
       <DependentUpon>MainMenu1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
