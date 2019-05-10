@@ -1,5 +1,5 @@
 #pragma once
-
+// STAFF REGISTRATION FORM
 
 namespace TransportSystem {
 
@@ -53,7 +53,8 @@ namespace TransportSystem {
 	private: System::Windows::Forms::Label^  name;
 	private: System::Windows::Forms::Label^  Adress;
 	private: System::Windows::Forms::Label^  contact;
-	private: System::Windows::Forms::Label^  busid;
+	private: System::Windows::Forms::Label^  age;
+
 
 
 
@@ -63,7 +64,8 @@ namespace TransportSystem {
 	private: System::Windows::Forms::TextBox^  namebox;
 	private: System::Windows::Forms::TextBox^  adresBox;
 	private: System::Windows::Forms::TextBox^  contactBox;
-	private: System::Windows::Forms::TextBox^  busBox;
+	private: System::Windows::Forms::TextBox^  ageBox;
+
 
 
 
@@ -88,6 +90,9 @@ namespace TransportSystem {
 
 
 
+
+
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -107,11 +112,11 @@ namespace TransportSystem {
 			this->name = (gcnew System::Windows::Forms::Label());
 			this->Adress = (gcnew System::Windows::Forms::Label());
 			this->contact = (gcnew System::Windows::Forms::Label());
-			this->busid = (gcnew System::Windows::Forms::Label());
+			this->age = (gcnew System::Windows::Forms::Label());
 			this->namebox = (gcnew System::Windows::Forms::TextBox());
 			this->adresBox = (gcnew System::Windows::Forms::TextBox());
 			this->contactBox = (gcnew System::Windows::Forms::TextBox());
-			this->busBox = (gcnew System::Windows::Forms::TextBox());
+			this->ageBox = (gcnew System::Windows::Forms::TextBox());
 			this->User = (gcnew System::Windows::Forms::Label());
 			this->password = (gcnew System::Windows::Forms::Label());
 			this->userIDBox = (gcnew System::Windows::Forms::TextBox());
@@ -127,7 +132,7 @@ namespace TransportSystem {
 			this->registration->BackColor = System::Drawing::Color::White;
 			this->registration->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->registration->Location = System::Drawing::Point(558, 111);
+			this->registration->Location = System::Drawing::Point(555, 110);
 			this->registration->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->registration->Name = L"registration";
 			this->registration->Size = System::Drawing::Size(376, 29);
@@ -141,7 +146,7 @@ namespace TransportSystem {
 			this->name->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->name->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->name->Location = System::Drawing::Point(258, 272);
+			this->name->Location = System::Drawing::Point(258, 251);
 			this->name->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->name->Name = L"name";
 			this->name->Size = System::Drawing::Size(70, 20);
@@ -154,7 +159,7 @@ namespace TransportSystem {
 			this->Adress->BackColor = System::Drawing::Color::White;
 			this->Adress->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Adress->Location = System::Drawing::Point(258, 329);
+			this->Adress->Location = System::Drawing::Point(258, 309);
 			this->Adress->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->Adress->Name = L"Adress";
 			this->Adress->Size = System::Drawing::Size(90, 20);
@@ -167,53 +172,53 @@ namespace TransportSystem {
 			this->contact->BackColor = System::Drawing::Color::White;
 			this->contact->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->contact->Location = System::Drawing::Point(258, 384);
+			this->contact->Location = System::Drawing::Point(258, 367);
 			this->contact->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->contact->Name = L"contact";
 			this->contact->Size = System::Drawing::Size(117, 20);
 			this->contact->TabIndex = 4;
 			this->contact->Text = L"Contact no.  :";
 			// 
-			// busid
+			// age
 			// 
-			this->busid->AutoSize = true;
-			this->busid->BackColor = System::Drawing::Color::White;
-			this->busid->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->age->AutoSize = true;
+			this->age->BackColor = System::Drawing::Color::White;
+			this->age->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->busid->Location = System::Drawing::Point(258, 435);
-			this->busid->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
-			this->busid->Name = L"busid";
-			this->busid->Size = System::Drawing::Size(84, 20);
-			this->busid->TabIndex = 5;
-			this->busid->Text = L"Bus ID   :";
+			this->age->Location = System::Drawing::Point(258, 439);
+			this->age->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
+			this->age->Name = L"age";
+			this->age->Size = System::Drawing::Size(61, 20);
+			this->age->TabIndex = 5;
+			this->age->Text = L"Age   :";
 			// 
 			// namebox
 			// 
-			this->namebox->Location = System::Drawing::Point(455, 268);
+			this->namebox->Location = System::Drawing::Point(455, 247);
 			this->namebox->Name = L"namebox";
 			this->namebox->Size = System::Drawing::Size(351, 24);
 			this->namebox->TabIndex = 7;
 			// 
 			// adresBox
 			// 
-			this->adresBox->Location = System::Drawing::Point(455, 325);
+			this->adresBox->Location = System::Drawing::Point(455, 307);
 			this->adresBox->Name = L"adresBox";
 			this->adresBox->Size = System::Drawing::Size(351, 24);
 			this->adresBox->TabIndex = 8;
 			// 
 			// contactBox
 			// 
-			this->contactBox->Location = System::Drawing::Point(455, 380);
+			this->contactBox->Location = System::Drawing::Point(455, 367);
 			this->contactBox->Name = L"contactBox";
 			this->contactBox->Size = System::Drawing::Size(351, 24);
 			this->contactBox->TabIndex = 9;
 			// 
-			// busBox
+			// ageBox
 			// 
-			this->busBox->Location = System::Drawing::Point(455, 435);
-			this->busBox->Name = L"busBox";
-			this->busBox->Size = System::Drawing::Size(351, 24);
-			this->busBox->TabIndex = 10;
+			this->ageBox->Location = System::Drawing::Point(455, 437);
+			this->ageBox->Name = L"ageBox";
+			this->ageBox->Size = System::Drawing::Size(351, 24);
+			this->ageBox->TabIndex = 10;
 			// 
 			// User
 			// 
@@ -253,9 +258,9 @@ namespace TransportSystem {
 			// 
 			this->Done->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Done->Location = System::Drawing::Point(942, 484);
+			this->Done->Location = System::Drawing::Point(937, 410);
 			this->Done->Name = L"Done";
-			this->Done->Size = System::Drawing::Size(111, 46);
+			this->Done->Size = System::Drawing::Size(113, 51);
 			this->Done->TabIndex = 15;
 			this->Done->Text = L"Done";
 			this->Done->UseVisualStyleBackColor = true;
@@ -265,7 +270,7 @@ namespace TransportSystem {
 			// 
 			this->Back->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Back->Location = System::Drawing::Point(1142, 484);
+			this->Back->Location = System::Drawing::Point(1148, 415);
 			this->Back->Name = L"Back";
 			this->Back->Size = System::Drawing::Size(107, 46);
 			this->Back->TabIndex = 16;
@@ -290,7 +295,7 @@ namespace TransportSystem {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->ClientSize = System::Drawing::Size(1370, 586);
+			this->ClientSize = System::Drawing::Size(1370, 607);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->Back);
 			this->Controls->Add(this->Done);
@@ -298,11 +303,11 @@ namespace TransportSystem {
 			this->Controls->Add(this->userIDBox);
 			this->Controls->Add(this->password);
 			this->Controls->Add(this->User);
-			this->Controls->Add(this->busBox);
+			this->Controls->Add(this->ageBox);
 			this->Controls->Add(this->contactBox);
 			this->Controls->Add(this->adresBox);
 			this->Controls->Add(this->namebox);
-			this->Controls->Add(this->busid);
+			this->Controls->Add(this->age);
 			this->Controls->Add(this->contact);
 			this->Controls->Add(this->Adress);
 			this->Controls->Add(this->name);
@@ -321,36 +326,38 @@ namespace TransportSystem {
 	private: System::Void form2_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void Done_Click(System::Object^  sender, System::EventArgs^  e) {
-			//MessageBox::Show("insert clicked");
-			try {
-				String^ constr = "Server=127.0.0.1;Uid=root;Pwd=;Database=student transport system";
-				MySqlConnection ^con = gcnew MySqlConnection(constr);
-	
-				int userid = Int32::Parse(userIDBox->Text);
-				int busid = Int32::Parse(busBox->Text);
-				String^ password = passwordBox->Text;
-				
-				//MessageBox::Show("ID: " + id);
-				String^ name = namebox->Text;
-				String^ adress = adresBox->Text;
-				int contact = Int32::Parse(contactBox->Text);
-				
-				MySqlCommand^ cmd = gcnew MySqlCommand("insert into staff values(" + userid + ",'" + password + "','" + name + "','" + adress + "'," + contact + "," + busid + ")", con);
-				MySqlDataReader^ dr;
-				con->Open();
-				dr = cmd->ExecuteReader();
-				MessageBox::Show("User info saved" + userid);
-			}
-			catch (Exception^ ex) {
-				MessageBox::Show(ex->Message);
-			} 
+		//MessageBox::Show("insert clicked");
+		try {
+			String^ constr = "Server=127.0.0.1;Uid=root;Pwd=;Database=student transport system";
+			MySqlConnection ^con = gcnew MySqlConnection(constr);
+
+			int userid = Int32::Parse(userIDBox->Text);
+
+			String^ password = passwordBox->Text;
+
+			//MessageBox::Show("ID: " + id);
+			String^ name = namebox->Text;
+			String^ adress = adresBox->Text;
+			int contact = Int32::Parse(contactBox->Text);
+			int age = Int32::Parse(ageBox->Text);
+
+			MySqlCommand^ cmd = gcnew MySqlCommand("insert into staff values(" + userid + ",'" + password + "','" + name + "','" + adress + "'," + contact + "," + age + ")", con);
+			MySqlDataReader^ dr;
+			con->Open();
+			dr = cmd->ExecuteReader();
+			MessageBox::Show("User info saved" + userid);
+		}
+		catch (Exception^ ex) {
+			MessageBox::Show(ex->Message);
+		}
 	}
 	private: System::Void Back_Click(System::Object^  sender, System::EventArgs^  e) {
 		this->Hide();
 		obj->Show();
 	}
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-	Application::Exit();
-}
-};
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		Application::Exit();
+	}
+
+	};
 }
